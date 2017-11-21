@@ -31,7 +31,7 @@
 				}
 
 				if ("password".equals(cookies[i].getName())) {
-				
+					cookies[i].setMaxAge(0);//删除Cookie
 
 					password = cookies[i].getValue();
 

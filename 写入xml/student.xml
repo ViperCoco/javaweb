@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<school>
+
+
+	<student>
+
+		<sid>1</sid>
+
+		<name>小明</name>
+
+		<sex>男</sex>
+
+		<age>20</age>
+
+		<hobby>编程</hobby>
+	</student>
+
+	<student>
+
+		<sid>2</sid>
+
+		<name>小红</name>
+
+		<sex>女</sex>
+
+		<age>18</age>
+
+		<hobby>舞蹈</hobby>
+	</student>
+
+
+	<student>
+
+		<sid>3</sid>
+
+		<name>小兰</name>
+
+		<sex>女</sex>
+
+		<age>18</age>
+
+		<hobby>羽毛球</hobby>
+	</student>
+
+</school>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+
+
+	<bean id="student" class="com.bean.Student">
+
+	</bean>
+
+
+	<bean id="user" class="com.bean.User">
+
+	</bean>
+
+
+
+</beans>

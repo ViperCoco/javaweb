@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.IStudentDao">
+
+
+	<!-- #{}是经过预编译的，是安全的；${}是未经过预编译的，仅仅是取变量的值，是非安全的，存在SQL注入。 预编译功能，在SQL执行前，会先将上面的SQL发送给数据库进行编译；执行时，直接使用编译好的SQL，替换占位符“?”就可以了。因为SQL注入只能对编译过程起作用，所以这样的方式就很好地避免了SQL注入的问题。 -->
+	<select id="findByStuId" resultType="com.model.Student">
+		select stuId, stuName,
+		stuSex, stuAge, stuHobby from student where stuId=#{stuId}
+	</select>
+
+	<select id="findAll" resultType="com.model.Student">
+
+		select stuId, stuName, stuSex,
+		stuAge, stuHobby from student
+	</select>
+
+	<insert id="insertStudent">
+
+		insert into student(stuId, stuName, stuSex, stuAge,
+		stuHobby)values(#{stuId},#{stuName},#{stuSex},#{stuAge},#{stuHobby})
+
+	</insert>
+
+</mapper>
